@@ -21,6 +21,7 @@ public/sitemap.xml
 # production
 /build
 *.xml
+!public/static/favicons/browserconfig.xml
 
 # rss feed
 /public/feed.xml
