@@ -1,0 +1,16 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.1.0
+
+workflows:
+  lint-and-build:
+    jobs:
+      - node/run:
+          name: Lint
+          npm-run: lint
+          version: 18.17.1
+      - node/run:
+          name: Build
+          npm-run: build
+          version: 18.17.1
