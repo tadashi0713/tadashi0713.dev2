@@ -8,9 +8,9 @@ workflows:
     jobs:
       - node/run:
           name: Lint
-          npm-run: lint
+          yarn-run: lint
           version: 18.17.1
       - node/run:
           name: Build
-          npm-run: build
+          yarn-run: build
           version: 18.17.1
